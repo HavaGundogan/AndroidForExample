@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="app_name">Notlarım</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="activity_title_home">Notlar</string>
+    <string name="msg_no_notes">Hernangi bir not bulunamadı!</string>
+    <string name="lbl_new_note_title">Yeni Not</string>
+    <string name="lbl_edit_note_title">Notu Güncelle</string>
+    <string name="hint_enter_note">Notunu gir!</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

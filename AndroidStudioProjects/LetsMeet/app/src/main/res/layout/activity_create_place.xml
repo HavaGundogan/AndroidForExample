@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/textColorLink"
+    tools:context=".CreatePlaceActivity">
+
+    <EditText
+        android:id="@+id/name_text_create_place_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="Place Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/type_create_place_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/type_create_place_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="51dp"
+        android:ems="10"
+        android:hint="Place Type"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/atmosphere_create_place_activity"
+        app:layout_constraintStart_toStartOf="@+id/name_text_create_place_activity"
+        app:layout_constraintTop_toBottomOf="@+id/name_text_create_place_activity" />
+
+    <ImageView
+        android:id="@+id/imageView_create_place_activity"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="selectPicture"
+        app:layout_constraintBottom_toTopOf="@+id/next_button_create_place_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atmosphere_create_place_activity"
+        app:srcCompat="@drawable/a1" />
+
+    <Button
+        android:id="@+id/next_button_create_place_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="63dp"
+        android:onClick="next"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_create_place_activity"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_create_place_activity" />
+
+    <EditText
+        android:id="@+id/atmosphere_create_place_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="Place Details"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_create_place_activity"
+        app:layout_constraintStart_toStartOf="@+id/type_create_place_activity"
+        app:layout_constraintTop_toBottomOf="@+id/type_create_place_activity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
